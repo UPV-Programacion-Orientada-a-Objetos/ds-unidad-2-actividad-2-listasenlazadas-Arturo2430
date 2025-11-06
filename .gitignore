@@ -1,2 +1,35 @@
-.vscode
+# Build directories
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE files
+.vscode/
 .vscode/*
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# Doxygen output
+html/
+latex/
+doxygen_warnings.txt
+
+# Arduino
+*.elf
+*.hex
+*.eep
+*.lss
+*.map
+*.sym
