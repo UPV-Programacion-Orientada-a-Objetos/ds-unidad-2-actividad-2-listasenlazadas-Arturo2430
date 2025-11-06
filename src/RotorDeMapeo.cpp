@@ -133,31 +133,33 @@ void RotorDeMapeo::rotar(int n) {
 char RotorDeMapeo::getMapeo(char in) const {
     if (cabeza == nullptr) return in;
     
+    // El espacio NUNCA se rota, siempre se mantiene como espacio
+    if (in == ' ') {
+        return ' ';
+    }
+    
     // Convertir a mayúsculas si es minúscula
     if (in >= 'a' && in <= 'z') {
         in = in - 'a' + 'A';
     }
     
-    // Buscar el nodo que contiene el carácter de entrada
-    NodoRotor* nodoEntrada = encontrarNodo(in);
+    // El cifrado César funciona así:
+    // Si el rotor ha rotado +2, entonces la cabeza está en 'C'
+    // Entrada 'A' -> Salida debería ser 'C' (cabeza actual)
+    // Entrada 'B' -> Salida debería ser 'D' (cabeza + 1)
     
-    if (nodoEntrada == nullptr) {
-        // Si no está en el rotor, devolver sin cambios
-        return in;
+    // Encontrar la posición original de 'in' (antes de cualquier rotación)
+    // Para esto, buscamos cuántos pasos hay desde 'A' hasta 'in'
+    int offsetDesdeA = 0;
+    if (in >= 'A' && in <= 'Z') {
+        offsetDesdeA = in - 'A';
+    } else {
+        return in; // Carácter no reconocido
     }
     
-    // Calcular la distancia desde la cabeza hasta el nodo de entrada
-    int distancia = calcularDistancia(cabeza, nodoEntrada);
-    
-    // El mapeo es: la posición de entrada se mapea a la posición 0 (cabeza)
-    // pero manteniendo el desplazamiento relativo
-    // Si la cabeza está en 'C' (rotación +2), entonces:
-    // 'A' (pos 0) -> 'C' (pos 0 actual)
-    // 'B' (pos 1) -> 'D' (pos 1 actual)
-    // Etc.
-    
+    // Aplicar el offset desde la cabeza actual
     NodoRotor* nodoSalida = cabeza;
-    for (int i = 0; i < distancia; i++) {
+    for (int i = 0; i < offsetDesdeA; i++) {
         nodoSalida = nodoSalida->siguiente;
     }
     
