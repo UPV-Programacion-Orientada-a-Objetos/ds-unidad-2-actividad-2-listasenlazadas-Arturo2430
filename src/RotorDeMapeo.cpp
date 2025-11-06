@@ -143,18 +143,12 @@ char RotorDeMapeo::getMapeo(char in) const {
         in = in - 'a' + 'A';
     }
     
-    // El cifrado César funciona así:
-    // Si el rotor ha rotado +2, entonces la cabeza está en 'C'
-    // Entrada 'A' -> Salida debería ser 'C' (cabeza actual)
-    // Entrada 'B' -> Salida debería ser 'D' (cabeza + 1)
-    
-    // Encontrar la posición original de 'in' (antes de cualquier rotación)
-    // Para esto, buscamos cuántos pasos hay desde 'A' hasta 'in'
+    // Encontrar la posición original de 'in'
     int offsetDesdeA = 0;
     if (in >= 'A' && in <= 'Z') {
         offsetDesdeA = in - 'A';
     } else {
-        return in; // Carácter no reconocido
+        return in;
     }
     
     // Aplicar el offset desde la cabeza actual
