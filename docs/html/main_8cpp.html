@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Decodificador PRT-7: Referencia del archivo main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Decodificador PRT-7<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de decodificación de protocolo industrial PRT-7</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Aplicación principal - Decodificador PRT-7 (RECEPTOR)  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;termios.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="TramaLoad_8h_source.html">include/TramaLoad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="TramaMap_8h_source.html">include/TramaMap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RotorDeMapeo_8h_source.html">include/RotorDeMapeo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ListaDeCarga_8h_source.html">include/ListaDeCarga.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title="Aplicación principal &#45; Decodificador PRT&#45;7 (RECEPTOR)" alt="" coords="477,5,560,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" title=" " alt="" coords="478,27,316,48,99,81,98,76,315,42,477,21"/>
+<area shape="rect" title=" " alt="" coords="109,79,176,104"/>
+<area shape="poly" title=" " alt="" coords="477,29,349,51,190,81,189,81,188,76,189,76,348,45,476,23"/>
+<area shape="rect" title=" " alt="" coords="201,79,266,104"/>
+<area shape="poly" title=" " alt="" coords="478,32,280,81,278,76,476,27"/>
+<area shape="rect" title=" " alt="" coords="290,79,363,104"/>
+<area shape="poly" title=" " alt="" coords="489,33,372,76,370,71,487,28"/>
+<area shape="rect" title=" " alt="" coords="388,79,463,104"/>
+<area shape="poly" title=" " alt="" coords="505,33,453,72,450,68,502,29"/>
+<area shape="rect" title=" " alt="" coords="487,79,550,104"/>
+<area shape="poly" title=" " alt="" coords="521,31,521,65,516,65,516,31"/>
+<area shape="rect" title=" " alt="" coords="574,79,658,104"/>
+<area shape="poly" title=" " alt="" coords="536,29,590,68,587,72,533,33"/>
+<area shape="rect" href="TramaLoad_8h.html" title="Clase para tramas de tipo LOAD del protocolo PRT&#45;7." alt="" coords="682,79,838,104"/>
+<area shape="poly" title=" " alt="" coords="558,28,708,72,707,77,557,33"/>
+<area shape="rect" href="TramaMap_8h.html" title="Clase para tramas de tipo MAP del protocolo PRT&#45;7." alt="" coords="862,79,1015,104"/>
+<area shape="poly" title=" " alt="" coords="561,24,858,74,857,79,560,29"/>
+<area shape="rect" href="RotorDeMapeo_8h.html" title="Lista circular doblemente enlazada para el cifrado de caracteres." alt="" coords="1039,79,1222,104"/>
+<area shape="poly" title=" " alt="" coords="561,21,1026,75,1026,81,560,27"/>
+<area shape="rect" href="ListaDeCarga_8h.html" title="Lista doblemente enlazada para almacenar caracteres decodificados." alt="" coords="1246,79,1418,104"/>
+<area shape="poly" title=" " alt="" coords="560,20,838,41,1232,76,1232,81,838,46,560,25"/>
+<area shape="rect" href="TramaBase_8h.html" title="Clase base abstracta para todas las tramas del protocolo PRT&#45;7." alt="" coords="796,152,903,177"/>
+<area shape="poly" title=" " alt="" coords="776,102,826,141,822,145,773,106"/>
+<area shape="poly" title=" " alt="" coords="926,106,876,145,873,141,923,102"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:aba5edf9405b533c4301f1be3f3c08df2" id="r_aba5edf9405b533c4301f1be3f3c08df2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aba5edf9405b533c4301f1be3f3c08df2">strcmp_nocase</a> (const char *a, const char *b)</td></tr>
+<tr class="memdesc:aba5edf9405b533c4301f1be3f3c08df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara dos cadenas C-style (case-insensitive)  <br /></td></tr>
+<tr class="separator:aba5edf9405b533c4301f1be3f3c08df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6effb132d82060f23973201e0b30fd2" id="r_ac6effb132d82060f23973201e0b30fd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac6effb132d82060f23973201e0b30fd2">configurarPuertoSerial</a> (const char *portName)</td></tr>
+<tr class="memdesc:ac6effb132d82060f23973201e0b30fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura el puerto serial para comunicación con ESP32.  <br /></td></tr>
+<tr class="separator:ac6effb132d82060f23973201e0b30fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1f1e9ba0302ec082e0521fd1d91576" id="r_a7e1f1e9ba0302ec082e0521fd1d91576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7e1f1e9ba0302ec082e0521fd1d91576">procesarLinea</a> (char *linea, <a class="el" href="classRotorDeMapeo.html">RotorDeMapeo</a> *rotor, <a class="el" href="classListaDeCarga.html">ListaDeCarga</a> *carga)</td></tr>
+<tr class="memdesc:a7e1f1e9ba0302ec082e0521fd1d91576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa una línea de entrada (parseo C-style)  <br /></td></tr>
+<tr class="separator:a7e1f1e9ba0302ec082e0521fd1d91576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal - Lee del stdin (simulando puerto serial)  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Aplicación principal - Decodificador PRT-7 (RECEPTOR) </p>
+<p>Este programa recibe tramas del protocolo PRT-7 desde el puerto serial, las procesa usando el rotor de mapeo y decodifica el mensaje original.</p>
+<p>Formato de tramas:</p><ul>
+<li>L,&lt;caracter&gt; : Carga un carácter (ej: L,H o L,Space)</li>
+<li>M,&lt;numero&gt; : Rota el rotor (ej: M,2 o M,-2)</li>
+</ul>
+<dl class="section author"><dt>Autor</dt><dd>Arturo </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2025-11-06 </dd></dl>
+</div><h2 class="groupheader">Documentación de funciones</h2>
+<a id="ac6effb132d82060f23973201e0b30fd2" name="ac6effb132d82060f23973201e0b30fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6effb132d82060f23973201e0b30fd2">&#9670;&#160;</a></span>configurarPuertoSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int configurarPuertoSerial </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>portName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura el puerto serial para comunicación con ESP32. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portName</td><td>Nombre del puerto (ej: /dev/ttyUSB0) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>File descriptor del puerto abierto, -1 si falla </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ac6effb132d82060f23973201e0b30fd2_icgraph.png" border="0" usemap="#amain_8cpp_ac6effb132d82060f23973201e0b30fd2_icgraph" alt=""/></div>
+<map name="amain_8cpp_ac6effb132d82060f23973201e0b30fd2_icgraph" id="amain_8cpp_ac6effb132d82060f23973201e0b30fd2_icgraph">
+<area shape="rect" title="Configura el puerto serial para comunicación con ESP32." alt="" coords="108,5,275,31"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Función principal &#45; Lee del stdin (simulando puerto serial)" alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función principal - Lee del stdin (simulando puerto serial) </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title="Función principal &#45; Lee del stdin (simulando puerto serial)" alt="" coords="5,55,60,80"/>
+<area shape="rect" href="main_8cpp.html#ac6effb132d82060f23973201e0b30fd2" title="Configura el puerto serial para comunicación con ESP32." alt="" coords="139,5,305,31"/>
+<area shape="poly" title=" " alt="" coords="59,55,107,39,141,31,142,36,109,45,61,60"/>
+<area shape="rect" href="classListaDeCarga.html#ab362a11124c248c2cc38831a3c7ab65a" title="Imprime el mensaje completo decodificado." alt="" coords="108,55,336,80"/>
+<area shape="poly" title=" " alt="" coords="60,65,94,65,94,70,60,70"/>
+<area shape="rect" href="main_8cpp.html#a7e1f1e9ba0302ec082e0521fd1d91576" title="Procesa una línea de entrada (parseo C&#45;style)" alt="" coords="165,155,279,180"/>
+<area shape="poly" title=" " alt="" coords="59,78,186,146,184,151,57,83"/>
+<area shape="rect" href="classListaDeCarga.html#a22b78f1548dea60b27e62d3805bd7df7" title="Verifica si la lista está vacía." alt="" coords="865,67,1045,92"/>
+<area shape="poly" title=" " alt="" coords="311,52,414,41,540,32,679,31,818,41,862,49,904,60,902,65,861,54,817,46,679,36,541,37,414,46,311,57"/>
+<area shape="rect" href="classTramaLoad.html#ade8ff3faef2c7319ea34da8a53bd5896" title="Procesa la trama LOAD." alt="" coords="384,131,541,156"/>
+<area shape="poly" title=" " alt="" coords="279,159,370,150,371,155,279,164"/>
+<area shape="rect" href="classTramaMap.html#a2108fdc79edbd189744fdc3d287a687d" title="Procesa la trama MAP." alt="" coords="385,183,540,208"/>
+<area shape="poly" title=" " alt="" coords="279,171,372,182,371,187,279,177"/>
+<area shape="rect" href="main_8cpp.html#aba5edf9405b533c4301f1be3f3c08df2" title="Compara dos cadenas C&#45;style (case&#45;insensitive)" alt="" coords="403,232,523,257"/>
+<area shape="poly" title=" " alt="" coords="263,178,410,225,408,230,262,183"/>
+<area shape="rect" href="classRotorDeMapeo.html#a727532dfbb71fce239f7e05f203480d8" title="Obtiene el carácter mapeado según la rotación actual." alt="" coords="607,184,799,209"/>
+<area shape="poly" title=" " alt="" coords="522,154,633,178,632,184,520,159"/>
+<area shape="rect" href="classListaDeCarga.html#a88849b50c9c2226c2a953f53ebe5d580" title="Imprime el mensaje parcial acumulado (formato: Mensaje: [H][O][L])" alt="" coords="589,55,817,95"/>
+<area shape="poly" title=" " alt="" coords="507,128,589,105,617,97,619,102,590,110,509,133"/>
+<area shape="rect" href="classListaDeCarga.html#a57696115ab53471df7607c896c84e977" title="Inserta un carácter al final de la lista." alt="" coords="613,119,793,159"/>
+<area shape="poly" title=" " alt="" coords="542,139,599,138,599,144,542,145"/>
+<area shape="poly" title=" " alt="" coords="787,117,887,93,889,98,789,122"/>
+<area shape="poly" title=" " alt="" coords="541,193,594,193,594,199,541,198"/>
+<area shape="rect" href="classRotorDeMapeo.html#ad221b5799dcf13def0afa76ae126ae0f" title="Rota el rotor N posiciones." alt="" coords="624,233,783,259"/>
+<area shape="poly" title=" " alt="" coords="525,206,630,228,629,233,524,211"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7e1f1e9ba0302ec082e0521fd1d91576" name="a7e1f1e9ba0302ec082e0521fd1d91576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1f1e9ba0302ec082e0521fd1d91576">&#9670;&#160;</a></span>procesarLinea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void procesarLinea </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>linea</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRotorDeMapeo.html">RotorDeMapeo</a> *&#160;</td>
+          <td class="paramname"><em>rotor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classListaDeCarga.html">ListaDeCarga</a> *&#160;</td>
+          <td class="paramname"><em>carga</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procesa una línea de entrada (parseo C-style) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linea</td><td>Buffer con la línea leída (será modificado por strtok) </td></tr>
+    <tr><td class="paramname">rotor</td><td>Puntero al rotor de mapeo </td></tr>
+    <tr><td class="paramname">carga</td><td>Puntero a la lista de carga </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_cgraph.png" border="0" usemap="#amain_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_cgraph" alt=""/></div>
+<map name="amain_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_cgraph" id="amain_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_cgraph">
+<area shape="rect" title="Procesa una línea de entrada (parseo C&#45;style)" alt="" coords="5,134,119,159"/>
+<area shape="rect" href="classTramaLoad.html#ade8ff3faef2c7319ea34da8a53bd5896" title="Procesa la trama LOAD." alt="" coords="167,81,324,106"/>
+<area shape="poly" title=" " alt="" coords="106,131,187,107,189,112,107,136"/>
+<area shape="rect" href="classTramaMap.html#a2108fdc79edbd189744fdc3d287a687d" title="Procesa la trama MAP." alt="" coords="168,134,323,159"/>
+<area shape="poly" title=" " alt="" coords="119,144,154,144,154,149,119,149"/>
+<area shape="rect" href="main_8cpp.html#aba5edf9405b533c4301f1be3f3c08df2" title="Compara dos cadenas C&#45;style (case&#45;insensitive)" alt="" coords="185,183,305,209"/>
+<area shape="poly" title=" " alt="" coords="111,157,185,177,183,182,109,162"/>
+<area shape="rect" href="classRotorDeMapeo.html#a727532dfbb71fce239f7e05f203480d8" title="Obtiene el carácter mapeado según la rotación actual." alt="" coords="390,134,582,159"/>
+<area shape="poly" title=" " alt="" coords="304,104,416,128,414,134,303,109"/>
+<area shape="rect" href="classListaDeCarga.html#a88849b50c9c2226c2a953f53ebe5d580" title="Imprime el mensaje parcial acumulado (formato: Mensaje: [H][O][L])" alt="" coords="372,5,600,45"/>
+<area shape="poly" title=" " alt="" coords="290,78,371,55,400,47,401,52,373,60,291,83"/>
+<area shape="rect" href="classListaDeCarga.html#a57696115ab53471df7607c896c84e977" title="Inserta un carácter al final de la lista." alt="" coords="396,69,576,109"/>
+<area shape="poly" title=" " alt="" coords="325,89,382,88,382,94,325,95"/>
+<area shape="rect" href="classListaDeCarga.html#a22b78f1548dea60b27e62d3805bd7df7" title="Verifica si la lista está vacía." alt="" coords="648,77,828,102"/>
+<area shape="poly" title=" " alt="" coords="576,87,634,87,634,92,576,92"/>
+<area shape="poly" title=" " alt="" coords="323,144,376,144,376,149,323,149"/>
+<area shape="rect" href="classRotorDeMapeo.html#ad221b5799dcf13def0afa76ae126ae0f" title="Rota el rotor N posiciones." alt="" coords="407,183,565,209"/>
+<area shape="poly" title=" " alt="" coords="308,157,410,178,409,183,307,162"/>
+</map>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_icgraph.png" border="0" usemap="#amain_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_icgraph" alt=""/></div>
+<map name="amain_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_icgraph" id="amain_8cpp_a7e1f1e9ba0302ec082e0521fd1d91576_icgraph">
+<area shape="rect" title="Procesa una línea de entrada (parseo C&#45;style)" alt="" coords="108,5,221,31"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Función principal &#45; Lee del stdin (simulando puerto serial)" alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aba5edf9405b533c4301f1be3f3c08df2" name="aba5edf9405b533c4301f1be3f3c08df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba5edf9405b533c4301f1be3f3c08df2">&#9670;&#160;</a></span>strcmp_nocase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool strcmp_nocase </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compara dos cadenas C-style (case-insensitive) </p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_aba5edf9405b533c4301f1be3f3c08df2_icgraph.png" border="0" usemap="#amain_8cpp_aba5edf9405b533c4301f1be3f3c08df2_icgraph" alt=""/></div>
+<map name="amain_8cpp_aba5edf9405b533c4301f1be3f3c08df2_icgraph" id="amain_8cpp_aba5edf9405b533c4301f1be3f3c08df2_icgraph">
+<area shape="rect" title="Compara dos cadenas C&#45;style (case&#45;insensitive)" alt="" coords="269,5,389,31"/>
+<area shape="rect" href="main_8cpp.html#a7e1f1e9ba0302ec082e0521fd1d91576" title="Procesa una línea de entrada (parseo C&#45;style)" alt="" coords="108,5,221,31"/>
+<area shape="poly" title=" " alt="" coords="256,21,221,21,221,15,256,15"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Función principal &#45; Lee del stdin (simulando puerto serial)" alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

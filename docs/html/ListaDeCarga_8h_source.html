@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Decodificador PRT-7: Archivo de código fuente include/ListaDeCarga.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Decodificador PRT-7<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de decodificación de protocolo industrial PRT-7</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ListaDeCarga.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ListaDeCarga_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef LISTADECARGA_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define LISTADECARGA_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structNodoCarga.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNodoCarga.html">NodoCarga</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structNodoCarga.html#a97b0046fa5aa44e7cb03efb38b515124">   22</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structNodoCarga.html#a97b0046fa5aa44e7cb03efb38b515124">datoCodificado</a>;    </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structNodoCarga.html#a01bbaa9396dac43a896b7d2f72d612aa">   23</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structNodoCarga.html#a01bbaa9396dac43a896b7d2f72d612aa">datoDecodificado</a>;  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structNodoCarga.html#aa5a7ed9aff1de84311d478b4144e4127">   24</a></span>    <a class="code hl_struct" href="structNodoCarga.html">NodoCarga</a>* <a class="code hl_variable" href="structNodoCarga.html#aa5a7ed9aff1de84311d478b4144e4127">siguiente</a>;   </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structNodoCarga.html#aa6af2c76d2a0339094d6edcf3832c3ec">   25</a></span>    <a class="code hl_struct" href="structNodoCarga.html">NodoCarga</a>* <a class="code hl_variable" href="structNodoCarga.html#aa6af2c76d2a0339094d6edcf3832c3ec">previo</a>;      </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structNodoCarga.html#ab59b74d14ad939aaed0e1a0169d701a2">   32</a></span>    <a class="code hl_function" href="structNodoCarga.html#ab59b74d14ad939aaed0e1a0169d701a2">NodoCarga</a>(<span class="keywordtype">char</span> codif, <span class="keywordtype">char</span> decodif) : <a class="code hl_variable" href="structNodoCarga.html#a97b0046fa5aa44e7cb03efb38b515124">datoCodificado</a>(codif), <a class="code hl_variable" href="structNodoCarga.html#a01bbaa9396dac43a896b7d2f72d612aa">datoDecodificado</a>(decodif), </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                           <a class="code hl_variable" href="structNodoCarga.html#aa5a7ed9aff1de84311d478b4144e4127">siguiente</a>(nullptr), <a class="code hl_variable" href="structNodoCarga.html#aa6af2c76d2a0339094d6edcf3832c3ec">previo</a>(nullptr) {}</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classListaDeCarga.html">   43</a></span><span class="keyword">class </span><a class="code hl_class" href="classListaDeCarga.html">ListaDeCarga</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classListaDeCarga.html#a037d87f0df95ef9ef73acba589b06bb6">   45</a></span>    <a class="code hl_struct" href="structNodoCarga.html">NodoCarga</a>* <a class="code hl_variable" href="classListaDeCarga.html#a037d87f0df95ef9ef73acba589b06bb6">cabeza</a>;  </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classListaDeCarga.html#ac065b33bb27a7a9f5fe4cc8eb7610fef">   46</a></span>    <a class="code hl_struct" href="structNodoCarga.html">NodoCarga</a>* <a class="code hl_variable" href="classListaDeCarga.html#ac065b33bb27a7a9f5fe4cc8eb7610fef">cola</a>;    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classListaDeCarga.html#a3124e28c9b3ca4e596393650468b14d4">   47</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classListaDeCarga.html#a3124e28c9b3ca4e596393650468b14d4">tamanio</a>;        </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="classListaDeCarga.html#ad45449e2427d1ebc6f31c737a213d7d6">ListaDeCarga</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="classListaDeCarga.html#aa2082ca43fa7ead69098c33963096276">~ListaDeCarga</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classListaDeCarga.html#a57696115ab53471df7607c896c84e977">insertarAlFinal</a>(<span class="keywordtype">char</span> codificado, <span class="keywordtype">char</span> decodificado);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classListaDeCarga.html#ab362a11124c248c2cc38831a3c7ab65a">imprimirMensaje</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classListaDeCarga.html#a88849b50c9c2226c2a953f53ebe5d580">imprimirMensajeParcial</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classListaDeCarga.html#a0f1103015cec6f87b060a692ce594cf6">obtenerTamanio</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classListaDeCarga.html#a22b78f1548dea60b27e62d3805bd7df7">estaVacia</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif </span><span class="comment">// LISTADECARGA_H</span></div>
+<div class="ttc" id="aclassListaDeCarga_html"><div class="ttname"><a href="classListaDeCarga.html">ListaDeCarga</a></div><div class="ttdoc">Lista doblemente enlazada para almacenar el mensaje decodificado.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:43</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_a037d87f0df95ef9ef73acba589b06bb6"><div class="ttname"><a href="classListaDeCarga.html#a037d87f0df95ef9ef73acba589b06bb6">ListaDeCarga::cabeza</a></div><div class="ttdeci">NodoCarga * cabeza</div><div class="ttdoc">Puntero al primer nodo.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:45</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_a0f1103015cec6f87b060a692ce594cf6"><div class="ttname"><a href="classListaDeCarga.html#a0f1103015cec6f87b060a692ce594cf6">ListaDeCarga::obtenerTamanio</a></div><div class="ttdeci">int obtenerTamanio() const</div><div class="ttdoc">Obtiene el tamaño de la lista.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:91</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_a22b78f1548dea60b27e62d3805bd7df7"><div class="ttname"><a href="classListaDeCarga.html#a22b78f1548dea60b27e62d3805bd7df7">ListaDeCarga::estaVacia</a></div><div class="ttdeci">bool estaVacia() const</div><div class="ttdoc">Verifica si la lista está vacía.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:98</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_a3124e28c9b3ca4e596393650468b14d4"><div class="ttname"><a href="classListaDeCarga.html#a3124e28c9b3ca4e596393650468b14d4">ListaDeCarga::tamanio</a></div><div class="ttdeci">int tamanio</div><div class="ttdoc">Número de elementos en la lista.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:47</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_a57696115ab53471df7607c896c84e977"><div class="ttname"><a href="classListaDeCarga.html#a57696115ab53471df7607c896c84e977">ListaDeCarga::insertarAlFinal</a></div><div class="ttdeci">void insertarAlFinal(char codificado, char decodificado)</div><div class="ttdoc">Inserta un carácter al final de la lista.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:37</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_a88849b50c9c2226c2a953f53ebe5d580"><div class="ttname"><a href="classListaDeCarga.html#a88849b50c9c2226c2a953f53ebe5d580">ListaDeCarga::imprimirMensajeParcial</a></div><div class="ttdeci">void imprimirMensajeParcial() const</div><div class="ttdoc">Imprime el mensaje parcial acumulado (formato: Mensaje: [H][O][L])</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:76</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_aa2082ca43fa7ead69098c33963096276"><div class="ttname"><a href="classListaDeCarga.html#aa2082ca43fa7ead69098c33963096276">ListaDeCarga::~ListaDeCarga</a></div><div class="ttdeci">~ListaDeCarga()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:22</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_ab362a11124c248c2cc38831a3c7ab65a"><div class="ttname"><a href="classListaDeCarga.html#ab362a11124c248c2cc38831a3c7ab65a">ListaDeCarga::imprimirMensaje</a></div><div class="ttdeci">void imprimirMensaje() const</div><div class="ttdoc">Imprime el mensaje completo decodificado.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:57</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_ac065b33bb27a7a9f5fe4cc8eb7610fef"><div class="ttname"><a href="classListaDeCarga.html#ac065b33bb27a7a9f5fe4cc8eb7610fef">ListaDeCarga::cola</a></div><div class="ttdeci">NodoCarga * cola</div><div class="ttdoc">Puntero al último nodo.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:46</div></div>
+<div class="ttc" id="aclassListaDeCarga_html_ad45449e2427d1ebc6f31c737a213d7d6"><div class="ttname"><a href="classListaDeCarga.html#ad45449e2427d1ebc6f31c737a213d7d6">ListaDeCarga::ListaDeCarga</a></div><div class="ttdeci">ListaDeCarga()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.cpp:15</div></div>
+<div class="ttc" id="astructNodoCarga_html"><div class="ttname"><a href="structNodoCarga.html">NodoCarga</a></div><div class="ttdoc">Nodo de la lista doblemente enlazada.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:21</div></div>
+<div class="ttc" id="astructNodoCarga_html_a01bbaa9396dac43a896b7d2f72d612aa"><div class="ttname"><a href="structNodoCarga.html#a01bbaa9396dac43a896b7d2f72d612aa">NodoCarga::datoDecodificado</a></div><div class="ttdeci">char datoDecodificado</div><div class="ttdoc">Carácter decodificado.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:23</div></div>
+<div class="ttc" id="astructNodoCarga_html_a97b0046fa5aa44e7cb03efb38b515124"><div class="ttname"><a href="structNodoCarga.html#a97b0046fa5aa44e7cb03efb38b515124">NodoCarga::datoCodificado</a></div><div class="ttdeci">char datoCodificado</div><div class="ttdoc">Carácter original (codificado)</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:22</div></div>
+<div class="ttc" id="astructNodoCarga_html_aa5a7ed9aff1de84311d478b4144e4127"><div class="ttname"><a href="structNodoCarga.html#aa5a7ed9aff1de84311d478b4144e4127">NodoCarga::siguiente</a></div><div class="ttdeci">NodoCarga * siguiente</div><div class="ttdoc">Puntero al siguiente nodo.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:24</div></div>
+<div class="ttc" id="astructNodoCarga_html_aa6af2c76d2a0339094d6edcf3832c3ec"><div class="ttname"><a href="structNodoCarga.html#aa6af2c76d2a0339094d6edcf3832c3ec">NodoCarga::previo</a></div><div class="ttdeci">NodoCarga * previo</div><div class="ttdoc">Puntero al nodo anterior.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:25</div></div>
+<div class="ttc" id="astructNodoCarga_html_ab59b74d14ad939aaed0e1a0169d701a2"><div class="ttname"><a href="structNodoCarga.html#ab59b74d14ad939aaed0e1a0169d701a2">NodoCarga::NodoCarga</a></div><div class="ttdeci">NodoCarga(char codif, char decodif)</div><div class="ttdoc">Constructor del nodo.</div><div class="ttdef"><b>Definition</b> ListaDeCarga.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

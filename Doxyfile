@@ -1,0 +1,82 @@
+# Doxyfile para el proyecto Decodificador PRT-7
+
+#---------------------------------------------------------------------------
+# Configuración del Proyecto
+#---------------------------------------------------------------------------
+PROJECT_NAME           = "Decodificador PRT-7"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Sistema de decodificación de protocolo industrial PRT-7"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+#---------------------------------------------------------------------------
+# Configuración de Entrada
+#---------------------------------------------------------------------------
+INPUT                  = main.cpp \
+                         include \
+                         src \
+                         firmware
+FILE_PATTERNS          = *.cpp \
+                         *.h \
+                         *.ino
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */build/* \
+                         */CMakeFiles/*
+
+#---------------------------------------------------------------------------
+# Configuración de Salida
+#---------------------------------------------------------------------------
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+#---------------------------------------------------------------------------
+# Configuración de Extracción
+#---------------------------------------------------------------------------
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+#---------------------------------------------------------------------------
+# Configuración de Documentación
+#---------------------------------------------------------------------------
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF = NO
+
+#---------------------------------------------------------------------------
+# Configuración de Advertencias
+#---------------------------------------------------------------------------
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+#---------------------------------------------------------------------------
+# Configuración de Gráficos
+#---------------------------------------------------------------------------
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = png
+INTERACTIVE_SVG        = NO
+
+#---------------------------------------------------------------------------
+# Configuración de Idioma
+#---------------------------------------------------------------------------
+OUTPUT_LANGUAGE        = Spanish
+
+#---------------------------------------------------------------------------
+# Configuración de Preprocesador
+#---------------------------------------------------------------------------
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
