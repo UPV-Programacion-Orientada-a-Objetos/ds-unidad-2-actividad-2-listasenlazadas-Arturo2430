@@ -161,7 +161,6 @@ void procesarLinea(char* linea, RotorDeMapeo* rotor, ListaDeCarga* carga) {
         
     } else {
         // Ignorar líneas que no son tramas (como separadores ---, líneas vacías, etc.)
-        // No mostrar advertencia para líneas que contengan solo guiones o espacios
         bool esSeparador = true;
         for (int i = 0; linea[i] != '\0'; i++) {
             if (linea[i] != '-' && linea[i] != ' ' && linea[i] != '\t') {
@@ -169,10 +168,8 @@ void procesarLinea(char* linea, RotorDeMapeo* rotor, ListaDeCarga* carga) {
                 break;
             }
         }
-        
+
         if (!esSeparador && linea[0] != '\0') {
-            // Solo mostrar advertencia si no es un separador vacío
-            // (No mostrar para mensajes del ESP32 como "REINICIANDO")
         }
     }
 }
